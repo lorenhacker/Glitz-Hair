@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="../html/Estilo.css">
+    <link rel="shortcut icon" href="../imagenes/DLBUTIK LOGO.png" type="png">
+</head>
+<body>
+       <div class ="head">  
+           <div class="logo">
+                 <img alt="logo" src="../imagenes/fondo.jpg" width="50"/>
+           </div>
+
+           <nav class="navbar">
+             <a href="#Inicio">Inicio</a>
+             <a href="#Nosotros">Nosotros</a>
+             <a href="#Productos">Productos</a>
+             <a href="formu.html">Contacto</a>    
+           </nav>
+       </div>
+
+       <header class="content header" id="Inicio">
+        <h1 class="titulo-principal"> Glitz Hair </h1>
+       </header>
+
+
+       <section class="content sau" id="Productos">
+         <div class="box-container"> 
+                <div class="box">
+                    <i class="fab fa-Onduladas"></i>
+                    
+                    <img src="../imagenes/cabello 1.avif" alt="Imagen Animada" class="imagen-animada">
+                </div>
+                <div class="box">
+                  <i class="fab fa-Lacias"></i>
+                  
+                    <img src="../imagenes/cabello 2.avif" alt="Imagen Animada" class="imagen-animada">
+                </div>  
+                <div class="box">
+                    <i class="fab fa-"></i>
+                  
+                    <img src="../imagenes/cabello 3.jpg" alt="Imagen Animada" class="imagen-animada">
+                </div>
+                <div class="box">
+                    <i class="fab fa-Rizadas"></i>
+                  
+                    <img src="../imagenes/cabello 4.jpg" alt="Imagen Animada" class="imagen-animada">
+                </div>
+         </div>
+       </section>
+       
+       </div>
+       <section class="content about" id="Nosotros">
+          <h2 class="title">Nosotros</h2>
+          <p>
+             Entendemos que cada tipo de cabello es único, por eso contamos con opciones para 
+             todo tipo de necesidades: hidratación, fortalecimiento, crecimiento, control del frizz,
+             definición de rizos y mucho más. Trabajamos con marcas reconocidas y fórmulas innovadoras
+             que garantizan resultados visibles,ayudándote a mantener un cabello sano, fuerte y radiante.
+           </p>
+     </section>
+
+      <section class="content price">
+           <article class="contain">
+              <h2 class="title"> Contacto</h2>
+              <p>
+                 contactenos para saber 
+                 mas sobre los precios
+              </p>
+            
+              <a href="formu.html" class="btn"> Contactenos </a>
+           </article>
+      </section>
+     
+      <section class="content Contact" id="Contacto">
+         <h2 class="title"> Redes </h2>
+          <a href="https://www.instagram.com/loryxglitz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn" >Instagram</a> 
+          <a href="https://www.tiktok.com/@qyslore_?_t=ZS-8tmH9jjzXQz&_r=1" class="btn"> Tik tok</a>
+      </section>
+      <footer> 
+        Lorenny Ramirez &copy; 2023-2024 
+      </footer> 
+      <script>
+         // Mensaje para verificar que el script funciona
+         console.log("JavaScript conectado correctamente");
+ 
+         // Selección de todas las imágenes con clase "imagen-animada"
+         const imagenesAnimadas = document.querySelectorAll('.imagen-animada');
+ 
+         // Agregar animación al pasar el ratón por encima
+         imagenesAnimadas.forEach((imagen) => {
+             imagen.addEventListener('mouseover', () => {
+                 imagen.style.transform = 'scale(1.1)';
+                 imagen.style.transition = 'transform 0.5s ease';
+             });
+ 
+             imagen.addEventListener('mouseout', () => {
+                 imagen.style.transform = 'scale(1)';
+             });
+         });
+ 
+         // Botón para volver al inicio
+         const botonSubir = document.createElement('button');
+         botonSubir.textContent = '↑ Subir';
+         botonSubir.style.position = 'fixed';
+         botonSubir.style.bottom = '20px';
+         botonSubir.style.right = '20px';
+         botonSubir.style.display = 'none';
+         botonSubir.style.padding = '10px 15px';
+         botonSubir.style.backgroundColor = 'rgb(202, 139, 110)';
+         botonSubir.style.color = 'white';
+         botonSubir.style.border = 'none';
+         botonSubir.style.cursor = 'pointer';
+         document.body.appendChild(botonSubir);
+ 
+         // Mostrar el botón al hacer scroll
+         window.addEventListener('scroll', () => {
+             if (window.scrollY > 100) {
+                 botonSubir.style.display = 'block';
+             } else {
+                 botonSubir.style.display = 'none';
+             }
+         });
+ 
+         // Acción del botón para ir al inicio
+         botonSubir.addEventListener('click', () => {
+             window.scrollTo({
+                 top: 0,
+                 behavior: 'smooth'
+             });
+         });
+     </script>
+</body>
+</html>

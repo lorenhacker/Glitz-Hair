@@ -1,0 +1,101 @@
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 15px;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(255, 243, 243, 0.1);
+}
+.mejoras, .consulta {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff; /* blanco */
+    border: 1px solid #ddd; /* gris claro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 50px; /* add some left margin to move it to the left */
+    margin-top: 3cm; /* add some top margin to move it down */
+  }
+/* Estilo de las etiquetas */
+label {
+
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón */
+.btn {
+    background-color: rgb(202, 139, 110); /* rosa predeterminado */
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Definición de la transición */
+}
+
+/* Efecto hover: Cambio de color y aumento de tamaño */
+.btn:hover {
+    background-color: rgb(196, 95, 48); /* Cambia a un rosa más oscuro */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(202, 139, 110) ;
+}
+
+/* Posicionar los formularios en la parte inferior de la página */
+.container {
+    margin-top: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+h2.mejoras {
+    color: rgb(202, 139, 110) ;
+   
+}
+
+
+
+/* Estilo responsive para dispositivos más pequeños */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media( max-width: 768px){
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .sau{
+        height: 120vh;
+    }
+    .navbar{
+        display: none;
+    }
+}

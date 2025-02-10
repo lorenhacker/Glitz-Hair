@@ -1,0 +1,211 @@
+*{
+    margin: 0%;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.navbar{
+    display: flex;
+    margin-right: 5px;
+}
+.logo{
+    margin-left: 30px;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navbar a{
+    display: block;
+    padding: 19px 20px;
+    color: #fffbfb;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navbar a:hover{
+    background: #000000;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    height: 60vh !important;
+    background: url(../imagenes/Inicio\ 2.jpeg) no-repeat center;
+    background-size: cover;
+}
+.title{
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+    justify-content: center;
+}
+.titulo-principal{
+    color: #0f0f0f;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #151515;
+    padding: 0 100px;
+}
+
+.btn{
+   display:block;
+   margin-top: 1px;
+   padding: 10px 30px;
+   border: 2px solid rgb(202, 139, 110) ;
+   color: #fff;
+   text-decoration: none;
+   background:rgb(202, 139, 110) ;
+}
+.btn:hover{
+    background: none;
+}
+
+.btn-home{
+    display: flex;
+}
+
+.btn-home a{
+    margin: 0 10px;
+}
+
+.content{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.box-container .box {
+    height: 10rem; 
+    width: 12rem;  
+    background: rgb(90, 90, 83);
+    text-align: center; /* Alinear el texto al centro */
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    margin: 2rem;
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; /* Colocar elementos en columna */
+    justify-content: center; 
+    align-items: center; 
+    transition: transform 0.3s; /* Efecto de transición al hacer hover */
+}
+
+.imagen-animada {
+    width: 200px;
+    height: auto;
+    transform: rotateY(180deg); /* Rota la imagen en el eje Y */
+    transition: transform 0.8s ease-in-out;
+}
+.box-container .box i{
+    height: 2rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #dbb882;
+    background: rgb(202, 139, 110) ;
+    font-size: 2rem;
+    margin: 1rem 0;
+  
+}
+.box-container .box h3{
+   font-size: 20px;
+   color: beige;
+}
+.box-container .box p{
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.price{
+    background: url(../imagenes/fondo.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.Contact{
+   padding-top: 20px;
+   background: #fffefe;
+   padding-bottom: 0;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 15px;
+}
+/* Botón para subir (JS) */
+button {
+    background-color: rgb(202, 139, 110) ;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Lo activamos con JS */
+}
+
+button:hover {
+    background-color: rgb(202, 139, 110) ;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+
+

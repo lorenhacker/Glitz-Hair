@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../html/formu.css">
+    <script src="../html/formu.js"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <h2 class="mejoras" id="Mejoras">Contactenos</h2>
+    <form>
+        <fieldset>
+            <legend>Información personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+            <span class="error"></span><br>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingrese su email">
+            <span class="error"></span><br>
+        </fieldset>
+    
+        <fieldset>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" required placeholder="Ingrese su mensaje"></textarea>
+            <span class="error"></span><br>
+        </fieldset>
+         
+        <button class="btn Enviar" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
